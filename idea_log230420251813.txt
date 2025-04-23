@@ -1,0 +1,26 @@
+
+org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 408. Message: [FlaNium ERROR]: Response timed out!!! 
+Host info: host: 'CR-S-DXDH302', ip: '10.27.241.105'
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows Server 2019', os.arch: 'amd64', os.version: '10.0', java.version: '19'
+Driver info: FlaNium.WinAPI.webdriver.FlaNiumDriver
+Command: [null, newSession {capabilities=[Capabilities {flanium:capabilities: {app: C:\Program Files (x86)\SAP\..., args: Windows-PC, connectToRunningApp: true, injectionActivate: true, launchDelay: 4000, processFindTimeOut: 9999, processName: saplogon.exe, responseTimeout: 10000}}]}]
+Capabilities {flanium:capabilities: {app: C:\Program Files (x86)\SAP\..., args: Windows-PC, connectToRunningApp: true, injectionActivate: true, launchDelay: 4000, processFindTimeOut: 9999, processName: saplogon.exe, responseTimeout: 10000}}
+
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+	at FlaNium.WinAPI.webdriver.FlaNiumDriverCommandExecutor.execute(FlaNiumDriverCommandExecutor.java:654)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:227)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:154)
+	at FlaNium.WinAPI.webdriver.FlaNiumDriver.<init>(FlaNiumDriver.java:36)
+	at org.csc.sap.Driver.<init>(Driver.java:57)
+	at org.csc.sap.Main.<init>(Main.java:27)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
